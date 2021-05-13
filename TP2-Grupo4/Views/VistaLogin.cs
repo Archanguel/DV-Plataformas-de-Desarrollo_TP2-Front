@@ -153,6 +153,10 @@ namespace TP2_Grupo4.Views
                 else
                 {
                     // USUARIO CLIENTE
+                    //VistaDashboardCliente admin = new VistaDashboardCliente(this.agencia);
+                    //admin.Show();
+                    //this.Hide();
+
                     // Crear un objeto de la vista del cliente
                     // Mostrar la con .show()
                     // Ocultar el login this.hide()

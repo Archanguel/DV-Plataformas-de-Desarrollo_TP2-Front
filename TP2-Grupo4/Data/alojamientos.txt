@@ -7,3 +7,6 @@
 999893,La plata,Centro,3,2,True,3500
 999,Mamita,Mamita99,3,5,False,800
 412,asd,asd,4,4,False,555,2,2
+55,ss,ss,3,5,True,55
+55,asd,asd,3,10,False,222,1,1
+1234,asd,asd,4,4,True,333,1,1

@@ -24,7 +24,6 @@ namespace TP2_Grupo4.Views
             this.agencia = userLogged;
             panelMenu.Controls.Add(leftBorderBtn);
 
-            //panelAlojamientoSubmenu.Visible = false;
             lblRoleUser.Text = userLogged.GetUsuarioLogeado().GetNombre();
 
             //FORM
@@ -34,7 +33,6 @@ namespace TP2_Grupo4.Views
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
 
             OpenChildForm(new VistaHome());
-            hideSubMenu();
         }
 
         private void OpenChildForm(Form childForm)
@@ -59,17 +57,6 @@ namespace TP2_Grupo4.Views
         {
             ActivateButton(sender, RGBColors.secondary);
             OpenChildForm(new VistaAlojamiento());
-            //showSubMenu(panelAlojamientoSubmenu);
-        }
-
-        private void btnHoteles_Click(object sender, EventArgs e)
-        {
-            //OpenChildForm(new VistaHoteles());
-        }
-
-        private void btnCabanias_Click(object sender, EventArgs e)
-        {
-            //OpenChildForm(new VistaCabanias());
         }
 
         // TODO: Mostrar Reservas
@@ -77,14 +64,12 @@ namespace TP2_Grupo4.Views
         {
             ActivateButton(sender, RGBColors.secondary);
             OpenChildForm(new VistaReservas());
-            hideSubMenu();
         }
 
         private void btnUsuarios_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.secondary);
             OpenChildForm(new VistaUsuario());
-            hideSubMenu();
         }
 
         private void btnCerrarSesion_Click(object sender, EventArgs e)
@@ -136,26 +121,6 @@ namespace TP2_Grupo4.Views
             }
         }
 
-        // Menu Helpers
-        private void hideSubMenu()
-        {
-            //if (panelAlojamientoSubmenu.Visible == true)
-            //    panelAlojamientoSubmenu.Visible = false;
-        }
-
-        private void showSubMenu(Panel subMenu)
-        {
-            if (subMenu.Visible == false)
-            {
-                hideSubMenu();
-                subMenu.Visible = true;
-            }
-            else
-            {
-                subMenu.Visible = false;
-            }
-        }
-
         // Variables de colores
         private struct RGBColors
         {
@@ -176,11 +141,6 @@ namespace TP2_Grupo4.Views
             ReleaseCapture();
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
-
-
-
-
         #endregion
-
     }
 }
