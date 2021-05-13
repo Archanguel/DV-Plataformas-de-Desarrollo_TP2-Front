@@ -48,18 +48,27 @@ namespace TP2_Grupo4.Views
                 FlatStyle = FlatStyle.Flat,
             };
             btnModificar.DefaultCellStyle.BackColor = Color.LightYellow;
-            table.Columns.Add("Codigo", typeof(int));
-            table.Columns.Add("Ciudad", typeof(string));
-            table.Columns.Add("Barrio", typeof(string));
-            table.Columns.Add("Estrellas", typeof(int));
-            table.Columns.Add("Cant. Personas", typeof(int));
-            table.Columns.Add("TV", typeof(bool));
-            table.Columns.Add("Precio", typeof(double));
-            dgvAlojamiento.DataSource = table;
+            var checkTv = new DataGridViewCheckBoxColumn
+            {
+                HeaderText = "Tv",
+                Name = "Tv"
+            };
+
+            dgvAlojamiento.Columns.Add("Codigo", "codigo");
+            dgvAlojamiento.Columns.Add("Ciudad", "codigo");
+            dgvAlojamiento.Columns.Add("Barrio", "codigo");
+            dgvAlojamiento.Columns.Add("Estrellas", "1");
+            dgvAlojamiento.Columns.Add("Cant. Personas", "1");
+            dgvAlojamiento.Columns.Add(checkTv);
+            dgvAlojamiento.Columns.Add("Precio", "1");
+            //dgvAlojamiento.Columns.Add("Habitaciones", "1");
+            //dgvAlojamiento.Columns.Add("Baños", "1");
+            //dgvAlojamiento.DataSource = table;
 
 
             dgvAlojamiento.Columns.Add(btnModificar);
             dgvAlojamiento.Columns.Add(btnBorrar);
+
             /*table.Columns.Add("Codigo", typeof(int));
             table.Columns.Add("Ciudad", typeof(string));
             table.Columns.Add("Barrio", typeof(string));
@@ -79,7 +88,7 @@ namespace TP2_Grupo4.Views
             List<Alojamiento> alojamientos = this.agencia.GetAgencia().GetAllAlojamientos();
             foreach (Alojamiento alojamiento in alojamientos)
             {
-                this.table.Rows.Add(
+                this.dgvAlojamiento.Rows.Add(
                     alojamiento.GetCodigo(),
                     alojamiento.GetCiudad(),
                     alojamiento.GetBarrio(),
@@ -101,9 +110,6 @@ namespace TP2_Grupo4.Views
             int cantidadPersonas = Int32.Parse(comboBoxCantPersonas.Text);
             bool tv = checkBoxTv.Checked;
             double precio = double.Parse(txtPrecio.Text);
-
-
-
 
             if ((comboBoxTipoAloj.SelectedItem).ToString() == "Hotel")
             {
