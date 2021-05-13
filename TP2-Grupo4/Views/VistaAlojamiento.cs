@@ -48,6 +48,7 @@ namespace TP2_Grupo4.Views
                 FlatStyle = FlatStyle.Flat,
             };
             btnModificar.DefaultCellStyle.BackColor = Color.LightYellow;
+
             var checkTv = new DataGridViewCheckBoxColumn
             {
                 HeaderText = "Tv",

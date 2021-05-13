@@ -153,9 +153,9 @@ namespace TP2_Grupo4.Views
                 else
                 {
                     // USUARIO CLIENTE
-                    //VistaDashboardCliente admin = new VistaDashboardCliente(this.agencia);
-                    //admin.Show();
-                    //this.Hide();
+                    VistaAlojamientosCliente cliente = new VistaAlojamientosCliente();
+                    cliente.Show();
+                    this.Hide();
 
                     // Crear un objeto de la vista del cliente
                     // Mostrar la con .show()

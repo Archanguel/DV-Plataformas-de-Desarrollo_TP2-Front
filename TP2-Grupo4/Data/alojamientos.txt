@@ -11,4 +11,3 @@
 55,asd,asd,3,10,False,222,1,1
 1234,asd,asd,4,4,True,333,1,1
 66,asd,asd,2,2,True,66
-77,ii,ii,2,4,False,77
