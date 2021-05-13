@@ -190,9 +190,9 @@ namespace TP2_Grupo4.Views
                     int codigo = Int32.Parse(dgvAlojamiento.Rows[rowIndex].Cells["Codigo"].Value.ToString());
 
                     // Guardar Datos
-
+                    int dni = this.agencia.GetUsuarioLogeado().GetDni();
                     // FALTA PONER LA FECHA Y EL USUARIO DE MANERA CORRECTA
-                    this.agencia.AgregarReserva(date1, date2, codigo, 40393222);//agencia.GetUsuarioLogeado().GetDni()
+                    this.agencia.AgregarReserva(date1, date2, codigo, dni);//agencia.GetUsuarioLogeado().GetDni()40393222
                     this.agencia.GuardarCambiosDeLasReservas();
 
                     // Actualizar GridView

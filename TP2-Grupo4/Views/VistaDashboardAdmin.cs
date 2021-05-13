@@ -142,5 +142,10 @@ namespace TP2_Grupo4.Views
             SendMessage(this.Handle, 0x112, 0xf012, 0);
         }
         #endregion
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

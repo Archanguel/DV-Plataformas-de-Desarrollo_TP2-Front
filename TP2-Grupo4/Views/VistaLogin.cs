@@ -153,7 +153,7 @@ namespace TP2_Grupo4.Views
                 else
                 {
                     // USUARIO CLIENTE
-                    VistaAlojamientosCliente cliente = new VistaAlojamientosCliente();
+                    VistaDashboardCliente cliente = new VistaDashboardCliente(this.agencia);
                     cliente.Show();
                     this.Hide();
 

@@ -98,7 +98,7 @@ namespace TP2_Grupo4.Views
             this.txtBarrio.Location = new System.Drawing.Point(298, 69);
             this.txtBarrio.Name = "txtBarrio";
             this.txtBarrio.Size = new System.Drawing.Size(100, 23);
-            this.txtBarrio.TabIndex = 6;
+            this.txtBarrio.TabIndex = 5;
             // 
             // txtPrecio
             // 
@@ -130,7 +130,7 @@ namespace TP2_Grupo4.Views
             this.txtCiudad.Location = new System.Drawing.Point(298, 26);
             this.txtCiudad.Name = "txtCiudad";
             this.txtCiudad.Size = new System.Drawing.Size(121, 23);
-            this.txtCiudad.TabIndex = 4;
+            this.txtCiudad.TabIndex = 2;
             // 
             // comboBoxCantPersonas
             // 
@@ -149,7 +149,7 @@ namespace TP2_Grupo4.Views
             this.comboBoxCantPersonas.Location = new System.Drawing.Point(531, 69);
             this.comboBoxCantPersonas.Name = "comboBoxCantPersonas";
             this.comboBoxCantPersonas.Size = new System.Drawing.Size(65, 23);
-            this.comboBoxCantPersonas.TabIndex = 2;
+            this.comboBoxCantPersonas.TabIndex = 6;
             this.comboBoxCantPersonas.Text = "1";
             this.comboBoxCantPersonas.SelectedIndexChanged += new System.EventHandler(this.comboBoxCantPersonas_SelectedIndexChanged);
             // 
@@ -214,7 +214,7 @@ namespace TP2_Grupo4.Views
             this.comboBoxEstrellas.Location = new System.Drawing.Point(114, 69);
             this.comboBoxEstrellas.Name = "comboBoxEstrellas";
             this.comboBoxEstrellas.Size = new System.Drawing.Size(53, 23);
-            this.comboBoxEstrellas.TabIndex = 5;
+            this.comboBoxEstrellas.TabIndex = 4;
             this.comboBoxEstrellas.Text = "1";
             // 
             // comboBoxTipoAloj
